@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.max-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #273965;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.text-container img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container h1 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.div-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.div-form-container p {
+    width: fit-content;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.div-form-container form {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.custom-input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 13px;
+    width: 100%;
+    height: 40px;
+}
+
+.action-button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #273965;
+    font-size: 14px;
+}
+
+.action-button:hover, .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #273965;
+    color: white;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .text-container {
+        width: 50%;
+        height: 100vw;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .text-container h1 {
+        font-size: 35px;
+        margin-top: 40px;
+        font-weight: 600;
+        padding: 0 10px;
+    }
+
+    .div-form-container {
+        width: 50%;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .div-form-container p {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0 50px;
+        font-weight: 400;
+        text-align: justify;
+        /* margin: 15px 0; */
+    }
+
+    .custom-p {
+        margin-top: 120px;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0 50px;
+        font-weight: 400;
+        text-align: justify;
+        /* margin: 15px 0; */
+    }
+
+    form{
+        margin-top: 50px;
+    }
+}
+
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #273965;
+    color: white;
+    margin: 15% auto;
+    padding: 20px 50px;
+    border: 1px solid #273965;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.modal-content p {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.close {
+    color: white;
+    float: inline-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #273965; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Election Signs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/assets/logoESjpg.ico" />
+  </head>
+  <body>
+
+    <div class="max-container">
+      <div class="main-container">
+        <div class="text-container">
+          <h1 class="first-title-custom">Coming soon</h1>
+          <img
+            width="500px"
+            height="150px"
+            src="https://cdn11.bigcommerce.com/s-phhfp72ejr/images/stencil/original/image-manager/electionsignslogo-final-rgb.jpg?t=1720708052"
+          />
+          <h1>You need it, we print it, you love it.</h1>
+        </div>
+        <div class="div-form-container">
+          <p class="custom-p">
+            Get ready for ElectionSigns.com, your one-stop shop for all your
+            election signage needs. Our mission is to provide high-quality,
+            customizable election signs that help you make a statement and stand
+            out from the crowd.
+          </p>
+          <p>
+            We are very much looking forward to launching and servicing
+            customers that want their voice heard this Election Day!
+          </p>
+          <p>
+            Stay election ready. Sign up to be the first to hear when we launch,
+            special pricing, product alerts & more.
+          </p>
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/customerservice@electionsigns.com"
+            method="POST"
+          >
+            <input
+              class="custom-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            /><br /><br />
+            <input
+              class="custom-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            /><br /><br />
+            <input
+              class="custom-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              required
+            /><br /><br />
+            <input class="action-button" type="submit" value="Send" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://coming-soon-2-two.vercel.app/"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thanks! The Election Signs team will contact you very soon</p>
+        </div>
+      </div>
+    </div>
+    <div id="loader" class="loader" style="display: none;"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
